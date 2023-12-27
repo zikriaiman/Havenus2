@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Havenus"
         tools:targetApi="31">
         <activity
+            android:name=".safetyplanviolence"
+            android:exported="false" />
+        <activity
+            android:name=".SafetyPlan"
+            android:exported="false"
+            android:label="@string/title_activity_safety_plan" />
+        <activity
             android:name=".safetyplans"
             android:exported="false"
             android:label="@string/title_activity_safetyplans" />
