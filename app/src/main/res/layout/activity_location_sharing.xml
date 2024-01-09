@@ -31,11 +31,12 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="293dp"
-        android:layout_height="122dp"
+        android:layout_width="305dp"
+        android:layout_height="141dp"
         android:fontFamily="sans-serif-black"
         android:text="Share your live location with your contacts"
         android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -44,136 +45,51 @@
         app:layout_constraintTop_toBottomOf="@+id/location_icon" />
 
     <ImageButton
-        android:id="@+id/whatsapp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/whatsapp_icon"
-        app:layout_constraintBottom_toTopOf="@+id/favourites"
-        app:layout_constraintStart_toEndOf="@+id/add"
-        app:layout_constraintTop_toBottomOf="@+id/share_to"
-        app:srcCompat="@drawable/whatsapp_icon" />
-
-    <ImageButton
         android:id="@+id/sms"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:contentDescription="Sms"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/favourites"
-        app:layout_constraintStart_toStartOf="@+id/favourites"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
         app:layout_constraintTop_toBottomOf="@+id/share_to"
-        app:src="@drawable/sms_icon"
         app:srcCompat="@drawable/sms_icon" />
-
-    <ImageButton
-        android:id="@+id/instagram"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/favourites"
-        app:layout_constraintStart_toEndOf="@+id/whatsapp"
-        app:layout_constraintTop_toBottomOf="@+id/share_to"
-        app:src="@drawable/instagram_icon"
-        app:srcCompat="@drawable/instagram_icon" />
-
-    <ImageButton
-        android:id="@+id/telegram"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/favourites"
-        app:layout_constraintStart_toEndOf="@+id/instagram"
-        app:layout_constraintTop_toBottomOf="@+id/share_to"
-        app:src="@drawable/telegram_icon"
-        app:srcCompat="@drawable/telegram_icon" />
-
-    <ImageButton
-        android:id="@+id/snapchat"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/favourites"
-        app:layout_constraintStart_toEndOf="@+id/telegram"
-        app:layout_constraintTop_toBottomOf="@+id/share_to"
-        app:src="@drawable/snapchat_icon"
-        app:srcCompat="@drawable/snapchat_icon" />
-
-    <ImageButton
-        android:id="@+id/more"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="1dp"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/favourites"
-        app:layout_constraintStart_toEndOf="@+id/snapchat"
-        app:layout_constraintTop_toBottomOf="@+id/share_to"
-        app:src="@drawable/more_icon"
-        app:srcCompat="@drawable/more_icon" />
 
     <TextView
         android:id="@+id/share_to"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="118dp"
+        android:layout_height="26dp"
         android:fontFamily="sans-serif-black"
-        android:text="Share to"
+        android:text="Quick share"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/favourites"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
-
-    <TextView
-        android:id="@+id/favourites"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="Favourites"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintStart_toStartOf="@+id/add"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-    <ImageButton
-        android:id="@+id/add"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="@+id/"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:src="@drawable/add_icon"
-        app:srcCompat="@drawable/add_icon" />
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="352dp"
         android:layout_height="75dp"
         android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="@+id/favourites"
-        app:layout_constraintTop_toBottomOf="@+id/share_to"></LinearLayout>
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="351dp"
-        android:layout_height="26dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="@+id/add"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="348dp"
         android:layout_height="27dp"
         android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="@+id/add"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"></LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="348dp"
-        android:layout_height="44dp"
+        android:layout_width="340dp"
+        android:layout_height="79dp"
         android:layout_marginTop="1dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="@+id/share_to"
@@ -198,5 +114,73 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/whatsapp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="Whatsapp"
+        android:scaleType="centerInside"
+        android:src="@drawable/whatsapp_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/sms"
+        app:layout_constraintStart_toEndOf="@+id/sms"
+        app:layout_constraintTop_toTopOf="@+id/sms"
+        app:srcCompat="@drawable/whatsapp_icon" />
+
+    <ImageButton
+        android:id="@+id/instagram"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="Instagram"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/whatsapp"
+        app:layout_constraintStart_toEndOf="@+id/whatsapp"
+        app:layout_constraintTop_toTopOf="@+id/whatsapp"
+        app:srcCompat="@drawable/instagram_icon_" />
+
+    <ImageButton
+        android:id="@+id/telegram"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="Telegram"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/instagram"
+        app:layout_constraintStart_toEndOf="@+id/instagram"
+        app:layout_constraintTop_toTopOf="@+id/instagram"
+        app:srcCompat="@drawable/telegram_icon" />
+
+    <ImageButton
+        android:id="@+id/snapchat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="Snapchat"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/telegram"
+        app:layout_constraintStart_toEndOf="@+id/telegram"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:srcCompat="@drawable/snapchat_icon" />
+
+    <ImageButton
+        android:id="@+id/more"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:contentDescription="More"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/snapchat"
+        app:layout_constraintStart_toEndOf="@+id/snapchat"
+        app:layout_constraintTop_toTopOf="@+id/snapchat"
+        app:srcCompat="@drawable/more_icon" />
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Share to"
+        android:textColor="#9B2CB7"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
