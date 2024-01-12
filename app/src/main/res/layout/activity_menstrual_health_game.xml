@@ -58,10 +58,13 @@
 
     <LinearLayout
         android:id="@+id/linearLayout7"
-        android:layout_width="410dp"
-        android:layout_height="430dp"
+        android:layout_width="408dp"
+        android:layout_height="455dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
