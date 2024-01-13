@@ -27,14 +27,15 @@
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="394dp"
-        android:layout_height="57dp"
+        android:layout_width="401dp"
+        android:layout_height="112dp"
         android:fontFamily="sans-serif-black"
         android:text="What counts as the first day of a new menstrual cycle?"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header_picture" />
@@ -44,10 +45,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/radioButton4" />
 
     <RadioButton
         android:id="@+id/radioButton1"
@@ -62,7 +63,7 @@
         app:layout_constraintBottom_toTopOf="@+id/radioButton2"
         app:layout_constraintEnd_toEndOf="@+id/question"
         app:layout_constraintStart_toStartOf="@+id/question"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout4"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
         tools:ignore="TouchTargetSizeCheck" />
 
     <RadioButton
@@ -105,15 +106,15 @@
         android:contentDescription="choose time interval"
         android:text="1 minute"
         android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton4"
         app:layout_constraintStart_toStartOf="@+id/radioButton1"
         app:layout_constraintTop_toBottomOf="@+id/radioButton2"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton4"
         tools:layout_editor_absoluteY="465dp" />
 
     <FrameLayout
         android:id="@+id/frameLayout4"
-        android:layout_width="419dp"
-        android:layout_height="243dp"
+        android:layout_width="414dp"
+        android:layout_height="260dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,13 +127,13 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/question"
         tools:layout_editor_absoluteY="328dp"></LinearLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout5"
-        android:layout_width="414dp"
-        android:layout_height="575dp"
+        android:layout_width="412dp"
+        android:layout_height="586dp"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="@+id/background"
         app:layout_constraintStart_toStartOf="parent"
